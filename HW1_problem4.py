@@ -12,7 +12,7 @@ for i in range(0, 10 ** 5):
 	b = random.random()
 	c = random.random()
 	
-	list.append(max(a,b,c))
+
 
 	
 
@@ -29,5 +29,5 @@ plt.hist(list, density=True, bins = 20)
 plt.xlabel("Time (Hours after 6:00)")
 plt.ylabel("Probability density")
 plt.legend(["Theoretical probability density", "Simulated probability density (10^5 trials)"])
-plt.title("PDF of the time which all 3 friends arrive")
+plt.title("PDF for the time which all 3 friends arrive")
 plt.show()

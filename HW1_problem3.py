@@ -32,7 +32,11 @@ while (itr <= 5):
 
 print(y[-1])
 plt.plot(x, y)
+
+calc= 0.143425777448 # this is from desmos
+plt.plot([1, 5], [calc, calc])
 plt.xlabel("N (logarithmic)")
 plt.ylabel("integral estimate")
 plt.title("Monte Carlo simulation estimate vs. number of simulations")
+plt.legend(["Value of Monte carlo simulation", "Numerically computed integral value"])
 plt.show()
